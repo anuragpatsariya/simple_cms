@@ -6,7 +6,7 @@ class CreatePages < ActiveRecord::Migration[6.0]
       t.integer :position
       t.boolean :visible
       t.text :context
-      t.integer :subject_id, index: true
+      #t.integer :subject_id, index: true
       t.belongs_to :subject
 
       t.timestamps
