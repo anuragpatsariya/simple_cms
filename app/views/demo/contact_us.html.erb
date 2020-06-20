@@ -1,0 +1,14 @@
+<h3>This is contact us page.</h3>
+<p>Phone: <%= @phone %> </p>
+<%= link_to("About us", {:action=>'about'}) %>
+<%-# link_to("About us", {:action=>'about_us'}) -%>
+ <% country = params[:country] %> <br/>
+<% if false %>
+<% if @country == "us" || @country == "ca" %>
+<p> <%= "Contact: 800-111-22222" %> </p>
+<% elsif @country == "uk" %>
+<p> <%= "Contact: 1800-111-22222" %> </p>
+<% else %>
+<p> <%= "Contact: +1 (112)788-0922" %>
+<% end %>
+<% end %>
